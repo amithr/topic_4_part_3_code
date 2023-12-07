@@ -1,0 +1,16 @@
+
+N = ARR.length
+loop I from 0 to N - 2
+    MIN_INDEX = I
+    loop J from I + 1 to N - 1
+        if ARR[J] < ARR[MIN_INDEX] then
+            MIN_INDEX = J
+        endif
+    endloop
+    if MIN_INDEX ≠ I then
+        // Swap the elements
+        TEMP = ARR[I]
+        ARR[I] = ARR[MIN_INDEX]
+        ARR[MIN_INDEX] = TEMP
+    endif
+endloop

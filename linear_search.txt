@@ -1,0 +1,21 @@
+// Define an array
+ELEMENTS = [5, 3, 7, 1, 8, 9]
+
+// Set the target value
+TARGET = 7
+
+// Variable to store if the target is found
+FOUND = False
+
+// Iterate through the array
+loop I from 0 to ELEMENTS.length - 1
+    if ELEMENTS[I] == TARGET then
+        output "Target found at index: ", I
+        FOUND = True
+    endif
+endloop
+
+// Check if target was not found
+if FOUND == False then
+    output "Target not found in the array."
+endif
