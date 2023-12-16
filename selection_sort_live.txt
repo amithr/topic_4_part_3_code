@@ -1,0 +1,14 @@
+NUMS = [31, 54, 67, 29, 51, 61, 23, 35]
+
+N = NUMS.length
+loop I from 0 to N - 1
+    MIN_INDEX = I
+    loop J from I to N - 1 
+        if NUM[J] < NUM[MIN_INDEX]
+            MIN_INDEX = J
+        endif
+    endloop
+    TEMP = NUM[I]
+    NUM[I] = NUM[MIN_INDEX]
+    NUM[MIN_INDEX] = TEMP
+endloop

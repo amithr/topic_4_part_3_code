@@ -1,0 +1,26 @@
+NUMS = [23, 29, 31, 35, 54, 61, 67]
+
+TARGET= 61
+LOW = 0
+HIGH = NUMS.length - 1
+FOUND = False
+
+loop while LOW <= HIGH
+    MID = (LOW + HIGH) div 2
+
+    if NUMS[MID] = TARGET then
+        output MID
+        FOUND = True
+    endif
+
+    if TARGET > NUMS[MID] then
+        LOW = MID + 1
+    else
+        HIGH = MID - 1
+    endif
+endloop
+
+if FOUND = False then
+    output "Target not found."
+
+

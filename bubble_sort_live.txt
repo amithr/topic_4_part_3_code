@@ -1,0 +1,14 @@
+NUMS = [31, 54, 67, 29, 51, 61, 23, 35]
+
+N = NUMS.length
+
+# Ascending
+loop I from 0 to N-1
+    loop J from 0 to (N-1) - I
+        if NUMS[J] > NUMS[J+1] then
+            temp = NUMS[J]
+            NUMS[J] = NUMS[J+1]
+            NUMS[J+1] = TEMP
+        endif
+    endloop
+endloop

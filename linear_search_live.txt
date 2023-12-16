@@ -1,0 +1,17 @@
+NUMS = [31, 54, 67, 29, 51, 61, 23, 35]
+
+TARGET = 51
+
+FOUND = False
+
+loop I from 0 to NUMS.length - 1
+    if NUMS[I] = TARGET then 
+        output "Target found at: ", I
+        FOUND = True
+    endif
+endloop
+
+if FOUND == False then
+    output "Target not found in array."
+endif
+
